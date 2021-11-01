@@ -6,6 +6,8 @@
 
 body{
 	margin: 0px 0px;
+	background-image: url("../ressources/test.png");
+	font-family: "ubuntu", arial;
 }
 
 header{
@@ -20,13 +22,13 @@ nav {
 	align-items: center;
 	justify-content: stretch;
 	height: 100px;
-	background-color: var(--my_blue);
 }
 
 #atlas_logo {
 	display: block;
 	width: 100px;
 	height: 100px;
+	margin: 0 200px 0 50px;
 }
 
 nav > * {
@@ -58,12 +60,17 @@ nav a:hover{
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 100px;
-	padding: 10px ;
+	padding-top: 10px;
+	padding-left: 25px ;
 	z-index: 100;
-	background-color: var(--my_blue);
 }
 
 p{
-	padding-top: 100px;
+	padding-top: 200px;
+	color: #FFF;
+}
+
+@font-face{
+	font-family: "ubuntu";
+	src:  url(../fonts/Ubuntu-Regular.ttf);
 }
