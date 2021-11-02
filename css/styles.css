@@ -1,0 +1,70 @@
+:root{
+	--is_not_hover: #DCDCDC;
+	--is_hover:  #FFFFFF;
+	--my_blue:  #5DADE2;
+}
+
+@font-face{
+	font-family: "ubuntu";
+	src:  url(../fonts/Ubuntu-Regular.ttf);
+}
+
+body{
+	margin: 0px 0px;
+	font-family: "ubuntu", arial;
+}
+
+header{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+
+header nav {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: stretch;
+	height: 100px;
+}
+
+#atlas_logo {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 200px 0 50px;
+}
+
+header nav > * {
+	display: inline-block;
+	font-size: 20px;
+}
+
+header nav a{
+	color: var(--is_not_hover);
+	text-decoration: none;
+}
+
+
+header nav a:hover{
+	color: var(--is_hover);
+}
+
+.flags_submenu{
+	display: none;
+	list-style-type: none;
+}
+
+.wrapper{
+	display: block;
+	padding: 0 0 10 0;
+}
+
+.wrapper:hover .flags_submenu{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	padding-top: 10px;
+	padding-left: 25px ;
+	z-index: 100;
+}
