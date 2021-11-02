@@ -1,0 +1,40 @@
+:root{
+	--my_blue : #5DADE2;
+	--my_green:  #7ED957;
+}
+body{
+	background-image: url(../ressources/bg-water.png);
+	background-attachment: fixed;
+	/*Empèche le fond de défiler avec le texte*/
+    background-repeat: no-repeat;
+    /*Si l'écran plus grand que le fond, empèche celui-ci de se duppliquer*/
+}
+
+main{
+	padding-top: 110px;
+}
+
+.summary{
+	position: fixed;
+	border: 2px solid black;
+	background-color: var(--my_blue);
+	font-size: 20px;
+}
+
+.summary h5{
+	padding-left: 15px;
+	color: #FFF;
+}
+
+.summary p{
+	padding-left: 25px;
+	padding-right: 30px;
+}
+
+.summary a{
+	color: var(--my_green);
+}
+
+.summary a:visited{
+	color: var(--my_green);
+}
