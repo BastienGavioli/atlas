@@ -5,13 +5,14 @@
 body{
 	background-image: url(../ressources/bg-water.png);
 	background-attachment: fixed;
-	/*Empèche le fond de défiler avec le texte*/
     background-repeat: no-repeat;
-    /*Si l'écran plus grand que le fond, empèche celui-ci de se duppliquer*/
+    background-size: cover;
 }
 
 main{
 	padding-top: 110px;
+	margin-right: 5%;
+	color: white;
 }
 
 .summary{
@@ -23,12 +24,13 @@ main{
 
 .summary h5{
 	padding-left: 15px;
+	padding-right: 10px;
 	color: #FFF;
 }
 
 .summary p{
-	padding-left: 25px;
-	padding-right: 30px;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .summary a{
@@ -37,4 +39,31 @@ main{
 
 .summary a:visited{
 	color: var(--my_green);
+}
+
+section{
+	margin: 100px 1px 1% 160px;
+	border: 2px solid black;
+}
+
+section h1{
+	text-align: center;
+}
+
+.flag_wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+section img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2px;
+	width: 60%;
+	height: 60%;
+}
+
+section figcaption{
+	text-align: center;
 }
