@@ -46,13 +46,20 @@ section{
 	border: 2px solid black;
 }
 
-section h1{
+section h1, section h2, section p{
 	text-align: center;
+	margin-bottom: 16px;
 }
 
-.flag_wrapper{
+section > ul {
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
+}
+
+section li{
+	width: 300px;
+	margin-bottom: 15px;
+	list-style-type: none;
 }
 
 section img{
@@ -60,10 +67,11 @@ section img{
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 2px;
-	width: 60%;
+	width: 30%;
 	height: 60%;
 }
 
 section figcaption{
+	margin-top: auto;
 	text-align: center;
 }
