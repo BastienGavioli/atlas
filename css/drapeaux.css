@@ -1,9 +1,22 @@
 :root{
 	--my_blue : #5DADE2;
-	--my_green:  #7ED957;
+	--my_green:  #7CFC00;
 }
+header nav{
+	background-color: #000;
+}
+
+.wrapper:hover .flags_submenu{
+	background-color: #000;
+}
+
+.flags_submenu a{
+	margin: 3px;
+}
+
+
 body{
-	background-image: url(../ressources/bg-water.png);
+	background-color: #2C2F33;
 	background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,6 +64,10 @@ section h1, section h2, section p{
 	margin-bottom: 16px;
 }
 
+section h2{
+	font-size: 1.3em;
+}
+
 section > ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -75,3 +92,6 @@ section figcaption{
 	margin-top: auto;
 	text-align: center;
 }
+
+/*Ancres*/
+#afrique:target, #amerique:target, #asie:target, #europe:target, #oceanie:target{padding-top: 100px;}
