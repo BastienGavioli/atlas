@@ -93,5 +93,10 @@ section figcaption{
 	text-align: center;
 }
 
+#nepal{
+	width: 20%;
+	height: 20%;
+}
+
 /*Ancres*/
 #afrique:target, #amerique:target, #asie:target, #europe:target, #oceanie:target{padding-top: 100px;}
